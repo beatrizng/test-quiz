@@ -35,7 +35,7 @@ Você deve realizar os 3 commits descritos abaixo e submeter os 3 links dos comm
 
 # Commit 1: Running the tests
 
-Antes de iniciar as atividades de teste, precisamos configurar o repositório de trabalho.
+Antes de iniciar as atividades de teste, precisamos configurar o repositório de trabalho
 
 ### Crie um fork deste repositório
 
