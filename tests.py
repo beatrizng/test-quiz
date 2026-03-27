@@ -102,3 +102,21 @@ def test_exceed_max_selections():
 
     with pytest.raises(Exception):
         q.correct_selected_choices([c1.id, c2.id])
+
+
+# FIXTURE (Commit 3)
+
+@pytest.fixture
+def sample_question():
+    q = Question(title='q1')
+    q.add_choice('a', False)
+    q.add_choice('b', True)
+    return q
+
+
+def test_fixture_choice_count(sample_question):
+    assert len(sample_question.choices) == 2
+
+def test_fixture_has_one_correct(sample_question):
+    correct = [c for c in sample_question.choices if c.is_correct]
+    assert len(correct) == 1
